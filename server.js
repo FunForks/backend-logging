@@ -7,7 +7,7 @@ const { join } = require('path')
 
 const express = require('express')
 
-const PORT = process.env.PORT || 3000
+const PORT   = process.env.PORT || 3000
 const STATIC = process.env.STATIC || "public"
 const static = join(__dirname, STATIC)
 
@@ -16,7 +16,8 @@ server.use(express.static(static));
 server.use(express.json()) // for POST data converted to JSON
 server.use(express.urlencoded({ extended: true })) // form data
 
-// require('./routes')(server)
+require('./logging')(server)
+require('./routes')(server)
 
 server.listen(PORT, logHostsToConsole)
 

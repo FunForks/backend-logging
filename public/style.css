@@ -32,6 +32,34 @@ body {
   background-color: var(--dark);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}
+
+pre {
+  border: 1px inset var(--light);
+  height: 16em;
+  width: 25em;
+  overflow: auto;
+}
+
+#prohibited,
+#missing {
+  height: 6em;
+}
+
 
 /* BUTTONS / BUTTONS / BUTTONS / BUTTONS / BUTTONS / BUTTONS */
 

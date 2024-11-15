@@ -7,9 +7,36 @@
     content="width=device-width, initial-scale=1.0"
   >
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
   <title>Winston &amp; Morgan</title>
 </head>
 <body>
-  <h1>Winston &amp; Morgan</h1>
+  <form id="form">
+    <h1>Winston &amp; Morgan</h1>
+    <button
+      id="crypto"
+      class="primary"
+      type="submit"
+    >
+      GET /crypto
+    </button>
+    <pre id="pre"></pre>
+
+    <button
+      id="private"
+      type="button"
+    >
+      GET /private
+    </button>
+    <pre id="prohibited"></pre>
+
+    <button
+      id="not-found"
+      type="button"
+    >
+      GET /not-found
+    </button>
+    <pre id="missing"></pre>
+  </form>
 </body>
 </html>
