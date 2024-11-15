@@ -1,0 +1,92 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  --light: #ddd;
+  --mid: #888;
+  --dark: #222;
+  --gap: 0.5em;
+
+  --primary: #060;
+  --primary-border: #393;
+  --primary-active: #030;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+
+/* BUTTONS / BUTTONS / BUTTONS / BUTTONS / BUTTONS / BUTTONS */
+
+div.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.buttons button {
+  flex: 1
+}
+
+div.buttons .primary {
+  margin-left: 0.5em;
+  flex: 2
+}
+
+
+button,
+.button {
+  border: 1px outset var(--mid);
+  border-radius: var(--gap);
+  padding: var(--gap);
+}
+
+button:not(:disabled),
+.button:not(:disabled) {
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  color: #fff;
+}
+
+button:hover:active,
+.button:hover:active {
+  border-style: inset;
+  background-color: #000;
+}
+
+button.pressed,
+.button.pressed {
+  color: #fff;
+  border-style: inset;
+  background-color: #000;
+}
+
+button.primary,
+.button.primary {
+  background-color: var(--primary);
+  border-color: var(--primary-border);
+}
+
+button.primary:active:hover,
+.button.primary:active:hover {
+  background-color: var(--primary-active);
+}

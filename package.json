@@ -1,0 +1,11 @@
+{
+  "name": "winston_morgan",
+  "version": "1.0.0",
+  "description": "Demo of how to log HTTP requests and debugging data in an Express server, using Winston and Morgan.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "license": "MIT"
+}
